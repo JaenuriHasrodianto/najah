@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<style>
+		h1 {
+			color: #F39C12;
+			font-size: 40px;
+			margin: 1px auto;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		.neon {
+			color: #FFFFFF;
+			text-shadow: 0 0 5px #F39C12, 0 0 10px #F39C12, 0 0 20px #F39C12, 0 0 45px #F39C12, 0 0 40px #F39C12;
+		}
+	</style>
+	<script language="JavaScript1.2">
+		function ClearError() { return true; }
+		window.onerror = ClearError;
+	</script>
+	<script>
+		window.onload = function () {
+			var h1 = document.getElementsByTagName("h1")[0],
+				text = h1.innerText || h1.textContent,
+				split = [], i, lit = 0, timer = null;
+			for (i = 0; i < text.length; ++i) {
+				split.push("<span>" + text[i] + "</span>");
+			}
+			h1.innerHTML = split.join("");
+			split = h1.childNodes;
+
+			var flicker = function () {
+				lit += 0.01;
+				if (lit >= 1) {
+					clearInterval(timer);
+				}
+				for (i = 0; i < split.length; ++i) {
+					if (Math.random() < lit) {
+						split[i].className = "neon";
+					} else {
+						split[i].className = "";
+					}
+				}
+			}
+			setInterval(flicker, 70);
+		}
+	</script>
+	<title>LOGIN - NAJAH Hotspot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/favicon.ico" />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<link href="css/main.css" rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio id="audio" autoplay><iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+	<audio id="audio" autoplay>
+		<source src="silence.mp3">
+	</audio>
+	<source src="pubg.mp3">
+</audio>
+
+<body style="overflow-y: visible;">
+
+	
+	<form name="sendin" action="" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	<script type="text/javascript" src="js/md5.js"></script>
+	<script type="text/javascript">
+			< !--
+			function doLogin() {
+				document.sendin.username.value = document.login.username.value;
+				document.sendin.password.value = hexMD5('' + document.login.password.value + '$(chap-challenge)');
+				document.sendin.submit();
+				return false;
+			}
+			//-->
+	</script>
+
+	<script type="text/javascript">
+		document.login.username.focus();
+	</script>
+
+	<div class="header">
+		<div class="container">
+			<div class="header_top">
+				<div class="header-left">
+					<div class="logo wow bounceInDown" data-wow-delay="0.01s">
+						<a href="login.html"><img src="images/logo.png" alt="" /></a>
+					</div>
+					<div class="menu">
+						<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						<ul class="nav" id="nav">
+							
+							<li class="active">
+								<a href="status.html"><i class="fa fa-gear" aria-hidden="true"></i> Status</a>
+							</li>
+							
+							<li class="active">
+								<a href="login.html"><i class="fa fa-gear" aria-hidden="true"></i> Login</a>
+							</li>
+							
+							<li>
+								<a href="pricing.html"><i class="fa fa-gear" aria-hidden="true"></i> Paket</a>
+							</li>
+							<li>
+								<a href="features.html"><i class="fa fa-gear" aria-hidden="true"></i> Fitur</a>
+							</li>
+							<li>
+								<a href="about.html"><i class="fa fa-gear" aria-hidden="true"></i> Tentang</a>
+							</li>
+							<div class="clearfix"></div>
+						</ul>
+						<script type="text/javascript" src="js/responsive-nav.js"></script>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<ul class="phone wow fadeInUpBig" data-wow-delay="0.01s">
+					<li><i class="ph_icon"> </i></li>
+					<li>
+						<p>0812 4975 5865</p>
+					</li>
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header_bottom">
+				<h1 id="alert" class="m_head wow rollIn" data-wow-delay="0.4s">.::Selamat Datang di area Wifi::. &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </u></h1>
+				<div class="video_buttons">
+					<div class="video_but"> <a style="min-width:150px;font-weight: bold" href="#trial"
+							data-toggle="modal" data-target="#trial" class="fa-btn btn-1 btn-1e">Coba Gratis [ Trial
+							]</a></div>
+					<div class="video_but"> <a style="min-width:150px;font-weight: bold" href="#login"
+							data-toggle="modal" data-target="#login" class="fa-btn btn-1 btn-1e">Login dengan Akun</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript">
+		var error = "";
+		var error1 = " has reached uptime limit";
+		var error2 = "user  has reached traffic limit";
+		var error3 = "no valid profile found";
+		var error4 = "invalid username or password";
+		var error5 = "user &lt;&gt; not found";
+		var error6 = "simultaneous session limit reached";
+
+		if (error == error1 || error == error2 || error == error3) {
+			window.location.href = "http://najah.net/expired.html";
+		} else if (error == error4) {
+			document.getElementById("alert").innerHTML = "<u>Selamat Datang di NAJAH Hotspot </u><br>Mohon Periksa Informasi Login Anda";
+		} else if (error == error5) {
+			document.getElementById("alert").innerHTML = "<u>Selamat Datang di NAJAH Hotspot </u><br>Akun Tidak Ditemukan";
+		} else if (error == error6) {
+			document.getElementById("alert").innerHTML = "<u>Selamat Datang di NAJAH Hotspot </u><br>Jumlah Session Login Telah Dibatasi";
+		} else {
+			document.getElementById("alert").innerHTML = "<u>Selamat Datang di NAJAH Hotspot </u><br>";
+		} 
+	</script>
+	
+	<style>
+		.blink {
+			animation: blink-animation 1s steps(5, start) infinite;
+			-webkit-animation: blink-animation 1s steps(5, start) infinite;
+		}
+
+		@keyframes blink-animation {
+			to {
+				visibility: hidden;
+			}
+
+			.
+		}
+
+		@-webkit-keyframes blink-animation {
+			to {
+				visibility: hidden;
+			}
+		}
+
+		.
+	</style>
+	<marquee loop="10"><strong><span class="blink">
+				<font color="#299617">.::Tukarkan 7 Voucher Gratis 1 voucher::. </font>
+			</span></strong></marquee>
+	<div align=center <div class="main">
+		<div class="container">
+			<div style="margin-top: 1em;" class="feature_grid1 span_8">
+				<div class="heading"><span>Promo Internet Berlangganan dan<em>&nbsp;Voucher</em></span></div>
+				<div class="col-md-4">
+					<div align=center <strong>
+						<table border="1">
+							<tr>
+								<strong>
+									<td align=center rowspan="2">Promo Voucher</td>
+								</strong>
+								<td align=center>Promo Quota internet Wifi 10GB 20k/Bulan</td>
+							</tr>
+							<tr>
+								<td align=center>Promo Quota internet Wifi 20GB 30k/Bulan</td>
+							</tr>
+						</table>
+						</strong>
+						<br />
+						<strong>
+							<table border="1">
+								<tr>
+									<strong>
+										<td align=center rowspan="2">Promo Member</td>
+									</strong>
+									<td align=center>Member 1 Bulan 2 Hp unlimeted 80k/Bulan</td>
+								</tr>
+								<tr>
+									<td align=center>Member 1 Bulan 3 Hp unlimited 100k/Bulan</td>
+								</tr>
+							</table>
+						</strong>
+						<br />
+						</style>
+						<marquee loop="10"><strong><span class="blink">
+									<font color="#C0392B">"Jumlah Voucher Promo Terbatas" </font>
+								</span></strong></marquee>
+						<br />
+						<br />
+						</td>"Jika anda ingin menjadi reseler voucher dengan sisitem bagi</td>
+						</td>hasil, atau Ingin memasang jaringan baru, untuk Info lebih lanjut silahkan klik tombol<font
+							color="#F39C12">&nbsp;Chat&nbsp;</font>di pojok kanan bawah"</td>
+						<div class="clearfix"> </div>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<div class="footer_icon">
+			<i class="icon"><img src="images/footer_icon.png"> </i>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-6 span_2">
+					<p class="copy">2022 &copy; Transform by <a href="http://najah.net" target="_blank">J14NN4 Net</a><br>Base<a href="http://najah.net" target="_blank"> NAJAH Hotspot</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Trial-->
+		<div>
+			<div class="modal fade" id="trial" tabindex="-1" role="dialog" aria-labelledby="trialModal"
+				aria-hidden="true">
+				<div style="max-width: 350px" class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title text-center" id="trialModal"><b>Coba Gratis Selama 10 Menit</b></h5>
+						</div>
+						<div style="padding: 15px 0 0px;" class="modal-body">
+							<p class="text-center">Anda ingin melanjutkan ?</p>
+						</div>
+						<div style="padding: 8px 20px 8px;" class="modal-footer">
+							<a class="btn btn-secondary" data-dismiss="modal">Batal</a>
+							$(if trial == 'yes')
+							<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
+								class="btn btn-primary">Lanjutkan</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal login-->
+		<div>
+			<div style="overflow-y: auto" class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="trialModal"
+				aria-hidden="true">
+				<div style="max-width: 350px" class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title text-center" id="trialModal"><b>Login Dengan Akun Hotspot</b></h5>
+						</div>
+						<div style="padding: 15px 0 0px;" class="modal-body">
+							<div style="margin-top: -15px;margin-bottom: 15px;" class="wrap-login100">
+								<form class="login100-form validate-form" name="login" action="$(link-login-only)" method="post"
+									$(if chap-id) onSubmit="return doLogin()" $(endif)>
+									<span class="login100-form-title">
+										<button onclick="window.location=
+																	'https://laksa19.github.io/myqr'" style="background-color: #357ae8;
+																	color: #fff;
+																	height: 35px; width: 150px;"><b>QR Code</b>
+										</button>
+										<hr style="margin-top: 15px">
+										<div style="margin-top: -26px;font-family: verdana"
+											class="btn-group btn-group-justified">
+											<div class="btn-group">
+												<button id="voucher" type="button" style="width:49.8%"
+													class="btn btn-info active"><i class="fa fa-credit-card"></i>
+													VOUCHER</button>
+												<button id="member" type="button" style="width:49.8%" class="btn btn-success"><i
+														class="fa fa-user"></i> MEMBER</button>
+											</div>
+										</div>
+										<div style="text-align: center;margin-top: 5px;padding-top: 5px;padding-bottom: 8px;font-family: tahoma;font-size: 10px"
+											class="alert alert-dismissible alert-warning">
+											<small style="font-size: 13px">Silahkan Login Sesuai Tipe Akun</small>
+										</div>
+									</span>
+									<div class="wrap-input100 validate-input">
+										<input class="input100" type="text" name="username" id="username"
+											placeholder="Kode Voucher" onblur="password.value=username.value" required="">
+										<span class="focus-input100"></span>
+										<span class="symbol-input100">
+											<i class="fa fa-user" aria-hidden="true"></i>
+										</span>
+									</div>
+									<div class="wrap-input100 validate-input">
+										<input class="input100" type="password" name="password" id="password"
+											placeholder="Tidak diperlukan" readonly>
+										<span class="focus-input100"></span>
+										<span class="symbol-input100">
+											<i class="fa fa-lock" aria-hidden="true"></i>
+										</span>
+									</div>
+									<hr style="margin-bottom: -10px">
+									<div class="container-login100-form-btn">
+										<button class="login100-form-btn">
+											<b>Login Hotspot</b>
+										</button>
+									</div>
+									<div class="text-center p-t-136">
+										<hr>
+										<a class="txt2" href="najah.net">
+											2022 &copy; Copyright NAJAH Hotspot
+										</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+<!--Start of Telegram Script-->
+		<script>
+			window.intergramId = "6459807101";
+			window.intergramCustomizations = {
+				titleClosed: 'Chat Admin',
+				titleOpen: 'Admin NAJAH Hotspot',
+				introMessage: 'ada yang bisa dibantu?',
+				autoResponse: 'Selamat datang di Obrolan Langsung dengan Admin',
+				autoNoResponse: 'Selamat datang kembali,' +
+					'pesan anda akan kami jawab, silahkan tunggu.',
+				mainColor: "#F39C12", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+				alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
+			};
+		</script>
+		<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+		<!--End of Telegram Script-->
+</body>
+
+</html>

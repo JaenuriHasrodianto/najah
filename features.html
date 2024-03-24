@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FITUR - $(identity)</title>
+		<meta charset="utf-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/favicon.ico"/>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="css/main.css" rel='stylesheet' type='text/css' />		
+		<script type="text/javascript" src="js/jquery.min.js"></script>			
+	</head>
+	<body>
+		<div class="header" style="background: url(images/price_bg.jpg) no-repeat center top;min-height:240px">
+		    <div class="container">
+		      	<div class="header_top">
+			      	<div class="header-left">
+						<div class="logo">
+							<a href="login.html"><img src="images/logo.png" alt=""/></a>
+						</div>
+						<div class="menu">
+							<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+							<ul class="nav" id="nav">
+							$(if login-by)  	
+						    	<li>
+						    		<a href="status.html"><i class="fa fa-gear" aria-hidden="true"></i> Status</a>
+						    	</li>
+						    $(else)
+						    	<li>
+						    		<a href="login.html"><i class="fa fa-gear" aria-hidden="true"></i> Login</a>
+						    	</li>
+						    $(endif) 
+						    	<li><a href="pricing.html"><i class="fa fa-gear" aria-hidden="true"></i> Paket</a></li>
+						    	<li class="active"><a href="features.html"><i class="fa fa-gear" aria-hidden="true"></i> Fitur</a></li>
+						    	<li><a href="about.html"><i class="fa fa-gear" aria-hidden="true"></i> Tentang</a></li>
+						    	<div class="clearfix"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+						</div>
+					 	<div class="clearfix"></div>
+			      	</div>
+			      	<ul class="phone">
+			      		<li><i class="ph_icon"> </i></li>
+			      		<li><p>0812 4975 5865</p></li>
+			      	</ul>
+			      	<div class="clearfix"> </div>
+			   	</div>
+			   	<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+		       	<div id="features" class="features">
+				 	<div class="heading"><span>Fitur dan <em>Keunggulan</em></span></div>
+				  	<div class="span_5">
+				 	<div class="feature_grid">
+		                <div class="col-md-6">
+							<div class="h-features-grid">
+								<i class="f_icon1"> </i>
+								<div class="features-grid-right">
+									<h4>Kualitas Jaringan</h4>
+									<p style="color:#555">Koneksi jaringan yang anda terima sudah kami manage sedemikian rupa sehingga anda akan merasakan kepuasan berselancar di internet.</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+				        </div>
+				        <div class="col-md-6">
+							<div class="h-features-grid">
+								<i class="f_icon2"> </i>
+								<div class="features-grid-right">
+									<h4>Manajemen bandwidth</h4>
+									<p style="color:#555">Struktur manajemen bandwidth di jaringan kami akan sangat menguntungkan bagi anda, karena tidak akan terjadi rebutan bandwidth di-antara pengguna.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+				        </div>
+				    </div>
+				    <div class="feature_grid">
+						<div class="col-md-6">
+							<div class="h-features-grid">
+								<i class="f_icon3"> </i>
+								<div class="features-grid-right">
+									<h4>Kuota Internet</h4>
+									<p style="color:#555">Anda tidak perlu khawatir dengan yang namanya "Batasan Pemakaian", karena dengan berlangganan internet kepada kami, anda akan mendapatkan kuota data "UNLIMITED".</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+				        </div>
+						<div class="col-md-6">
+							<div class="h-features-grid">
+								<i class="f_icon4"> </i>
+								<div class="features-grid-right">
+									<h4>Full Support</h4>
+									<p>Demi memberikan kepuasan kepada pelanggan, kami siap membantu anda untuk setiap kendala yang anda temui terkait penggunaan jaringan internet kami.</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+				        </div>
+				    </div>
+				    <div class="clearfix"> </div>
+				</div>
+				<div class="feature_grid1">
+					<div class="heading"><span>Jasa dan <em>Layanan</em></span></div>
+		            <div class="col-md-4">
+						<ul class="service_box">
+		       		  		<li class="service_box-left">
+		       		  			<span class="num"><img src="images/tick.png" alt=""/></span>
+		       		  		</li>
+		       		  		<li class="service_box-right">
+		       		  			<h3>Pulsa Elektrik</h3>
+		       		  			<p style="color:#555">Kami juga menjual pulsa elektrik dari berbagai macam operator GSM : TELKOMSEL - INDOSAT - TRI - AXIS</p>
+		       		  		</li>
+		       		  		<div class="clearfix"> </div>
+		       		  	</ul>
+				    </div>
+		            <div class="col-md-4">
+						<ul class="service_box">
+		       		  		<li class="service_box-left">
+		       		  			<span class="num"><img src="images/tick.png" alt=""/></span>
+		       		  		</li>
+		       		  		<li class="service_box-right">
+		       		  			<h3>Paket Data</h3>
+		       		  			<p style="color:#555">Kami juga menjual paket data internet dari berbagai macam operator GSM : TELKOMSEL - INDOSAT - TRI - AXIS</p>
+		       		  		</li>
+		       		  		<div class="clearfix"> </div>
+		       		  	</ul>
+				    </div>
+		            <div class="col-md-4">
+						<ul class="service_box">
+		       		  		<li class="service_box-left">
+		       		  			<span class="num"><img src="images/tick.png" alt=""/></span>
+		       		  		</li>
+		       		  		<li class="service_box-right">
+		       		  			<h3>Token Listrik</h3>
+		       		  			<p style="color:#555">Habis Token Listrik ? Beli ditempat kami, karena harga yang kami tawarkan sangat bersaing dan bersahabat.</p>
+		       		  		</li>
+		       		  		<div class="clearfix"> </div>
+		       		  	</ul>
+				    </div>
+				    <div class="clearfix"> </div>
+			   </div>
+		   </div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="footer_icon">
+			<i class="icon"><img src="images/footer_icon.png"> </i>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="col-md-6 span_2">
+			 		<p class="copy">2022 &copy; Transform by <a href="http://najah.net" target="_blank">J14NN4 Net</a><br>Base <a href="http://najah.net" target="_blank">NAJAH Hotspot</a></p>
+				</div>
+			</div>
+		</div>
+		<script src="js/bootstrap.min.js"></script>	
+	</body>
+</html>		

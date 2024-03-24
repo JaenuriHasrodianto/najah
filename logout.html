@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOGOUT BERHASIL - $(identity)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script language="JavaScript">
+      function readablizeBytes(bytes) {
+        var s = ["bytes", "kb", "MB", "GB", "TB", "PB"];
+        var e = Math.floor(Math.log(bytes) / Math.log(1024));
+        return (bytes / Math.pow(1024, Math.floor(e))).toFixed(2) + " " + s[e];
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header" style="background: url(images/price_bg.jpg) no-repeat center top; min-height: 240px">
+      <div class="container">
+        <div class="header_top">
+          <div class="header-left">
+            <div class="logo">
+              <a href="login.html"><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="menu">
+              <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+              <ul class="nav" id="nav">
+                <li class="active">
+                  <a href="login.html"><i class="fa fa-gear" aria-hidden="true"></i> Login</a>
+                </li>
+                <li>
+                  <a href="pricing.html"><i class="fa fa-gear" aria-hidden="true"></i> Paket</a>
+                </li>
+                <li>
+                  <a href="features.html"><i class="fa fa-gear" aria-hidden="true"></i> Fitur</a>
+                </li>
+                <li>
+                  <a href="about.html"><i class="fa fa-gear" aria-hidden="true"></i> Tentang</a>
+                </li>
+                <div class="clearfix"></div>
+              </ul>
+              <script type="text/javascript" src="js/responsive-nav.js"></script>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <ul class="phone">
+            <li><i class="ph_icon"> </i></li>
+            <li><p>0812 4975 5865</p></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="heading">
+          <span>Logout <em>Berhasil</em></span>
+        </div>
+        <div class="col-md-6">
+          <p style="text-align: center; margin-bottom: 20px">Terima kasih sudah menggunakan internet bersama $(identity).</p>
+          <table class="table table-striped table-hover" style="font-size: 14px">
+            <tbody>
+              <tr>
+                <td>ID Hotspot</td>
+                <td>$(username)</td>
+              </tr>
+              <tr>
+                <td>IP Address</td>
+                <td>$(ip)</td>
+              </tr>
+              <tr>
+                <td>Mac Address</td>
+                <td>$(mac)</td>
+              </tr>
+              <tr>
+                <td>Sisa Waktu</td>
+                <td>$(if session-time-left) $(session-time-left) $(else) unlimited $(endif)</td>
+              </tr>
+              <tr>
+                <td>Sisa Quota</td>
+                <td>$(if remain-bytes-total-nice) $(remain-bytes-total-nice) $(else) unlimited $(endif)</td>
+              </tr>
+              <tr>
+                <td>Terhubung</td>
+                <td>$(uptime)</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+            <div class="col-sm-12">
+              <div style="width: 100%" class="form-group">
+                <a href="login.html" style="width: 100%; height: 40px; padding-left: 15px; padding-right: 15px" class="btn btn-primary btn-block2">Login Kembali</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="col-md-4">
+          <img style="width: 100%" src="images/about-us-image.jpg" />
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div style="margin-top: 3em" class="feature_grid1 span_8">
+          <div class="heading">
+            <span>Hubungi <em>Kami</em></span>
+          </div>
+          <div class="col-md-4">
+            <ul class="service_box">
+              <li class="service_box-left">
+                <span class="num"><img src="images/location.png" alt="" /></span>
+              </li>
+              <li class="service_box-right">
+                <h3>$(identity)</h3>
+                <p style="color: #444">jl. H.watem Km17<br />KPR Nusantara Block D No.3<br />Sorong, Sororng Timur,98417</p>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="service_box">
+              <li class="service_box-left">
+                <span class="num"><img src="images/phone.png" alt="" /></span>
+              </li>
+              <li class="service_box-right">
+                <h3>Nomor Telepon</h3>
+                <p style="color: #444">Call : 0812 4975 5865</p>
+                <p style="color: #444">WhatsApp : 0812 4975 5865</p>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="service_box">
+              <li class="service_box-left">
+                <span class="num"><img src="images/internet.png" alt="" /></span>
+              </li>
+              <li class="service_box-right">
+                <h3>Media Social</h3>
+                <p style="color: #444">Facebook : <a href="https://www.facebook.com/profile.php?id=100072514176998&sk=about_life_events">Asral</a></p>
+                <p style="color: #444">Fan Page : <a href="http://najah.net">najah.net</a></p>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="footer_icon">
+      <i class="icon"><img src="images/footer_icon.png" /> </i>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-6 span_2">
+          <p class="copy">2022 &copy; Transform by <a href="http://najah.net" target="_blank">J14NN4 Net</a><br />Bas <a href="hhttp://najah.net" target="_blank">NAJAH Hotspot</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Start of Telegram Script-->
+    <script>
+      window.intergramId = "6459807101";
+      window.intergramCustomizations = {
+        titleClosed: "Chat Admin",
+        titleOpen: "Admin NAJAH Hotspot",
+        introMessage: "ada yang bisa dibantu?",
+        autoResponse: "Selamat datang di Obrolan Langsung dengan Admin",
+        autoNoResponse: "Selamat datang kembali," + "pesan anda akan kami jawab, silahkan tunggu.",
+        mainColor: "#F39C12", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+        alwaysUseFloatingButton: true, // Use the mobile floating button also on large screens
+      };
+    </script>
+    <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+    <!--End of Telegram Script-->
+  </body>
+</html>
